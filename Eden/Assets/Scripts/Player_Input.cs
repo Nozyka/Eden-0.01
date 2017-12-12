@@ -15,7 +15,7 @@ public class Player_Input : MonoBehaviour {
     private bool bSpeedMax;
 
     ///PUBLIC///
-    public GameObject CameRig;
+    public GameObject CamRig;
     public Rigidbody rb_CamRig;
     public int iRotationZ;
     public Player_Input Other;
@@ -24,81 +24,84 @@ public class Player_Input : MonoBehaviour {
     void Start () {
 
         trackedObject = GetComponent<SteamVR_TrackedObject>();
-        rb_CamRig = CameRig.GetComponent<Rigidbody>();
+        rb_CamRig = CamRig.GetComponent<Rigidbody>();
         camRigVelocity = rb_CamRig.velocity;
      }
 
     void Break ()
     {
-        /////////// FREINAGE X ///////////
+        if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
+        {
+            /////////// FREINAGE X ///////////
 
-        if (camRigVelocity.x > fFastVelocity)
-        {
-            camRigVelocity.x -= fFastVelocity / 2;
-        }
-        else if (camRigVelocity.x >= fVelocity && camRigVelocity.x < fFastVelocity)
-        {
-            camRigVelocity.x -= fVelocity;
-        }
-        else if (camRigVelocity.x < -fFastVelocity)
-        {
-            camRigVelocity.x += fFastVelocity / 2;
-        }
-        else if (camRigVelocity.x <= -fVelocity && camRigVelocity.x > fFastVelocity)
-        {
-            camRigVelocity.x += fVelocity;
-        }
-        else if (camRigVelocity.x > -fVelocity && camRigVelocity.x < fVelocity)
-        {
-            camRigVelocity.x = 0;
-        }
+            if (camRigVelocity.x > fFastVelocity)
+            {
+                camRigVelocity.x -= fFastVelocity / 2;
+            }
+            else if (camRigVelocity.x >= fVelocity && camRigVelocity.x < fFastVelocity)
+            {
+                camRigVelocity.x -= fVelocity;
+            }
+            else if (camRigVelocity.x < -fFastVelocity)
+            {
+                camRigVelocity.x += fFastVelocity / 2;
+            }
+            else if (camRigVelocity.x <= -fVelocity && camRigVelocity.x > fFastVelocity)
+            {
+                camRigVelocity.x += fVelocity;
+            }
+            else if (camRigVelocity.x > -fVelocity && camRigVelocity.x < fVelocity)
+            {
+                camRigVelocity.x = 0;
+            }
 
-        /////////// FREINAGE Y ///////////
+            /////////// FREINAGE Y ///////////
 
-        if (camRigVelocity.y > fFastVelocity)
-        {
-            camRigVelocity.y -= fFastVelocity / 2;
-        }
-        else if (camRigVelocity.y >= fVelocity && camRigVelocity.y < fFastVelocity)
-        {
-            camRigVelocity.y -= fVelocity;
-        }
-        else if (camRigVelocity.y < -fFastVelocity)
-        {
-            camRigVelocity.y += fFastVelocity / 2;
-        }
-        else if (camRigVelocity.y <= -fVelocity && camRigVelocity.y > fFastVelocity)
-        {
-            camRigVelocity.y += fVelocity;
-        }
-        else if (camRigVelocity.y > -fVelocity && camRigVelocity.y < fVelocity)
-        {
-            camRigVelocity.y = 0;
-        }
+            if (camRigVelocity.y > fFastVelocity)
+            {
+                camRigVelocity.y -= fFastVelocity / 2;
+            }
+            else if (camRigVelocity.y >= fVelocity && camRigVelocity.y < fFastVelocity)
+            {
+                camRigVelocity.y -= fVelocity;
+            }
+            else if (camRigVelocity.y < -fFastVelocity)
+            {
+                camRigVelocity.y += fFastVelocity / 2;
+            }
+            else if (camRigVelocity.y <= -fVelocity && camRigVelocity.y > fFastVelocity)
+            {
+                camRigVelocity.y += fVelocity;
+            }
+            else if (camRigVelocity.y > -fVelocity && camRigVelocity.y < fVelocity)
+            {
+                camRigVelocity.y = 0;
+            }
 
-        /////////// FREINAGE Z ///////////
+            /////////// FREINAGE Z ///////////
 
-        if (camRigVelocity.z > fFastVelocity)
-        {
-            camRigVelocity.z -= fFastVelocity / 2;
+            if (camRigVelocity.z > fFastVelocity)
+            {
+                camRigVelocity.z -= fFastVelocity / 2;
+            }
+            else if (camRigVelocity.z >= fVelocity && camRigVelocity.z < fFastVelocity)
+            {
+                camRigVelocity.z -= fVelocity;
+            }
+            else if (camRigVelocity.z < -fFastVelocity)
+            {
+                camRigVelocity.z += fFastVelocity / 2;
+            }
+            else if (camRigVelocity.z <= -fVelocity && camRigVelocity.z > fFastVelocity)
+            {
+                camRigVelocity.z += fVelocity;
+            }
+            else if (camRigVelocity.z > -fVelocity && camRigVelocity.z < fVelocity)
+            {
+                camRigVelocity.z = 0;
+            }
+            rb_CamRig.velocity = camRigVelocity;
         }
-        else if (camRigVelocity.z >= fVelocity && camRigVelocity.z < fFastVelocity)
-        {
-            camRigVelocity.z -= fVelocity;
-        }
-        else if (camRigVelocity.z < -fFastVelocity)
-        {
-            camRigVelocity.z += fFastVelocity / 2;
-        }
-        else if (camRigVelocity.z <= -fVelocity && camRigVelocity.z > fFastVelocity)
-        {
-            camRigVelocity.z += fVelocity;
-        }
-        else if (camRigVelocity.z > -fVelocity && camRigVelocity.z < fVelocity)
-        {
-            camRigVelocity.z = 0;
-        }
-        rb_CamRig.velocity = camRigVelocity;
     }
 
     void CheckSpeed()
@@ -110,14 +113,8 @@ public class Player_Input : MonoBehaviour {
             bSpeedMax = true;
     }
 
-    // Update is called once per frame
-    void Update () {
-
-        iRotationZ = (int)transform.localEulerAngles.z;
-
-        device = SteamVR_Controller.Input((int)trackedObject.index);
-        camRigVelocity = rb_CamRig.velocity;
-        CheckSpeed();
+    void Thruster()
+    {
         if (device.GetPress(SteamVR_Controller.ButtonMask.Grip) && bSpeedMax)
         {
             rb_CamRig.AddForce(transform.forward / 50, ForceMode.Impulse);
@@ -128,23 +125,31 @@ public class Player_Input : MonoBehaviour {
         {
             AkSoundEngine.PostEvent("Thruster", gameObject);
         }
+    }
 
-        if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
-        {
-            Break();
-        }
-
+    void Grab()
+    {
         if (device.GetPress(SteamVR_Controller.ButtonMask.Trigger))
         {
             if (Door.Instance.bCanGrab)
             {
                 Door.Instance.Turn(1);
-                Debug.Log("je te tiens");
             }
         }
         else if (!device.GetPress(SteamVR_Controller.ButtonMask.Trigger) && !Other.device.GetPress(SteamVR_Controller.ButtonMask.Trigger))
             Door.Instance.Turn(0);
     }
 
+    // Update is called once per frame
+    void Update () {
 
+        iRotationZ = (int)transform.localEulerAngles.z;
+
+        device = SteamVR_Controller.Input((int)trackedObject.index);
+        camRigVelocity = rb_CamRig.velocity;
+        CheckSpeed();
+        Thruster();
+        Break();
+        Grab();
+    }
 }

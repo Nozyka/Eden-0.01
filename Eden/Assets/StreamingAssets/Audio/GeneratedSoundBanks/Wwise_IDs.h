@@ -13,12 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ISS_DRONE = 2826520643U;
         static const AkUniqueID THRUSTER = 1758897770U;
     } // namespace EVENTS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID AMBIANT = 78669895U;
         static const AkUniqueID THRUSTER = 1758897770U;
     } // namespace BANKS
 
