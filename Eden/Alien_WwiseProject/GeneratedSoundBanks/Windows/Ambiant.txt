@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2826520643	Iss_Drone			\Default Work Unit\Iss_Drone	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	409905909	SFX_AMB_Drone	C:\Users\eleve\Desktop\EDEN_test\Alien\Alien_WwiseProject\.cache\Windows\SFX\SFX\SFX_AMB_Drone_01_DC31AEC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_AMB_Drone		9848208
+

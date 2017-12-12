@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774831289a184e940ac8dbcd40a61720, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{7554EC60-830B-447C-858E-24770B41A883}'
+    m_lastTimePsrt1: -1936489182
+    m_lastTimePart2: -1999290215
+    List:
+    - Name: Iss_Drone
+      Path: Default Work Unit\Iss_Drone
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Iss_Drone
+        ObjectType: 3
+      ID: -1468446653
+      Guid: 51020b70f416c540a4b5f3370e1dbca8
+      maxAttenuation: 15
+    - Name: Thruster
+      Path: Default Work Unit\Thruster
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Thruster
+        ObjectType: 3
+      ID: 1758897770
+      Guid: 9014a12b2485364ea2616914cccf4bc1
+      maxAttenuation: 2
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{EB7F745A-4631-4C00-AABC-0B209DCC4CB9}'
+    m_lastTimePsrt1: 915907072
+    m_lastTimePart2: -1999290280
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{57385B47-BB2B-41CB-B1EC-2226777917A8}'
+    m_lastTimePsrt1: 1055907072
+    m_lastTimePart2: -1999290280
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{41898DB7-1A54-49FB-BBC8-24E0C00742E1}'
+    m_lastTimePsrt1: 1075907072
+    m_lastTimePart2: -1999290280
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{4F89967C-607E-4F26-91C9-CE47EE5AB94E}'
+    m_lastTimePsrt1: 1205808905
+    m_lastTimePart2: -1999290210
+    List:
+    - Name: Ambiant
+      Path: Default Work Unit\Ambiant
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiant
+        ObjectType: 7
+      ID: 78669895
+      Guid: b78991e95c9c9f4cb61af0d303b65379
+    - Name: Thruster
+      Path: Default Work Unit\Thruster
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Thruster
+        ObjectType: 7
+      ID: 1758897770
+      Guid: 8b580a0af5c6e945add77d622e119926
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{44484D49-726B-4DF6-BCD5-ADA2FDBC4DFE}'
+    m_lastTimePsrt1: 875907072
+    m_lastTimePart2: -1999290280
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A3C3B8E0-7C44-4C3F-8593-236A3F77D8D6}'
+    m_lastTimePsrt1: 1095907072
+    m_lastTimePart2: -1999290280
+    List: []
+  ExpandedItems:
+  - /Alien_WwiseProject
+  - /Alien_WwiseProject/Events
+  - /Alien_WwiseProject/Events/Default Work Unit
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

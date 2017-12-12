@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7554EC60-830B-447C-858E-24770B41A883}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7554EC60-830B-447C-858E-24770B41A883}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Thruster" ID="{2BA11490-8524-4E36-A261-6914CCCF4BC1}">
+					<ChildrenList>
+						<Action Name="" ID="{282B0F68-93E0-4121-B829-9CB6367C8CFF}" ShortID="824911668">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thruster" ID="{2C1B23A0-C644-4703-A205-75D18EA3D9E0}" WorkUnitID="{2B2DF973-C00A-4C49-81AD-BFC0F5E70D64}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Iss_Drone" ID="{700B0251-16F4-40C5-A4B5-F3370E1DBCA8}">
+					<ChildrenList>
+						<Action Name="" ID="{749CEC6A-8522-4621-925F-2FFC645EDA29}" ShortID="586313837">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_AMB_Drone" ID="{48839B86-5A55-492F-B0B9-7BA232C4EFF9}" WorkUnitID="{2B2DF973-C00A-4C49-81AD-BFC0F5E70D64}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

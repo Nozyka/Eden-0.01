@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2B2DF973-C00A-4C49-81AD-BFC0F5E70D64}" SchemaVersion="80">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2B2DF973-C00A-4C49-81AD-BFC0F5E70D64}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{F3A8F4C1-1691-4F0B-81EB-3CEFBBFF3DAE}" ShortID="1072664106">
+					<ChildrenList>
+						<Sound Name="SFX_AMB_Drone" ID="{48839B86-5A55-492F-B0B9-7BA232C4EFF9}" ShortID="311216424">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Drone" ID="{C504BEA4-C255-4EA8-AAE5-D51266CD206D}" WorkUnitID="{576CFBC6-E2E3-4109-9E0B-B0EED8021C35}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{096B796F-61EA-4826-AF34-E0915F97F599}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EB7F745A-4631-4C00-AABC-0B209DCC4CB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_AMB_Drone_01" ID="{BF8188FE-BCFE-4E72-B320-5EEEA2A7416E}" ShortID="409905909">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.81877375973798E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.47446019003183E-02"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.67778349098441"/>
+										<Property Name="TrimEnd" Type="Real64" Value="58.5062509109088"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX\SFX_AMB_Drone_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_AMB_Drone_01" ID="{BF8188FE-BCFE-4E72-B320-5EEEA2A7416E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Thruster" ID="{2C1B23A0-C644-4703-A205-75D18EA3D9E0}" ShortID="242085592">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{477EFD4B-5113-4A2D-83F0-4D752765101B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Thruster" ID="{1C267EA8-1489-41F5-89F6-F395A5E77406}" WorkUnitID="{576CFBC6-E2E3-4109-9E0B-B0EED8021C35}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{096B796F-61EA-4826-AF34-E0915F97F599}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EB7F745A-4631-4C00-AABC-0B209DCC4CB9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Thruster" ID="{37850E0A-B9DF-49A3-B2ED-012DF575C359}" ShortID="758094874">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Thruster.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="322028182"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Thruster" ID="{37850E0A-B9DF-49A3-B2ED-012DF575C359}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
